@@ -11,8 +11,8 @@ import withReactContent from 'sweetalert2-react-content'
 interface IdData {
     name: string;
     address: string;
-    nid: number;
-    birthDate: Date;
+    nid: string;
+    birthDate: string;
     mobile?: number;
     error?: string;
 }
@@ -87,7 +87,7 @@ const Index = () => {
             mobile: mobile
         };
         try {
-            const res = await fetch("http://127.0.0.1:8000/api/ocr-data", {
+            const res = await fetch("http://adendan.com/api/ocr-data", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
