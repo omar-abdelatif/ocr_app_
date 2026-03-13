@@ -87,7 +87,7 @@ const Index = () => {
             mobile: mobile
         };
         try {
-            const res = await fetch("http://adendan.com/api/ocr-data", {
+            const res = await fetch("https://adendan.com/api/ocr-data", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
